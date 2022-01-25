@@ -24,6 +24,7 @@ class MainViewModel: ObservableObject {
 					let result = try JSONDecoder().decode(Crypto.self, from: data)
 					DispatchQueue.main.async {
 						self.items = result
+						print(result)
 					}
 				} else {
 					print("No data")

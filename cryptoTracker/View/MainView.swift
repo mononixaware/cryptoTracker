@@ -12,22 +12,10 @@ struct MainView: View {
 	@State var searchText = ""
 	
 	var body: some View {
-		NavigationView {
-			List(vm.items, id: \.id) { item in
-				HStack {
-					Text(item.symbol)
-						.font(.system(.body, design: .rounded).weight(.semibold))
-						.foregroundColor(Color.black)
-					
-					Spacer()
-					
-					Text(item.price)
-						.font(.system(.body, design: .rounded).weight(.light))
-						.foregroundColor(Color.black)
-				}
+		VStack {
+			List(vm.items) { item in
+				Text(item.symbol)
 			}
-			.navigationTitle("Crypto Prices")
-			.searchable(text: $searchText)
 		}
 	}
 }
