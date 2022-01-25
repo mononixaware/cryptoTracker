@@ -12,10 +12,14 @@ struct MainView: View {
 	@State var searchText = ""
 	
 	var body: some View {
-		VStack {
-			List(vm.items) { item in
-				Text(item.symbol)
+		NavigationView {
+			List {
+				ForEach(vm.items) { item in
+					Text(item.symbol)
+				}
 			}
+			.navigationTitle("Crypto Prices")
+			.searchable(text: $searchText)
 		}
 	}
 }
