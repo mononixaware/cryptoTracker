@@ -9,27 +9,25 @@ import SwiftUI
 
 struct MainView: View {
 	@StateObject var vm = MainViewModel()
+	@State var searchText = ""
 	
 	var body: some View {
-		ZStack {
-			VStack {
-				List(vm.items, id: \.id) { item in
-					HStack {
-						Text(item.symbol)
-							.font(.system(.body, design: .rounded).weight(.semibold))
-							.foregroundColor(Color.black)
-						
-						Spacer()
-						
-						Text(item.price)
-							.font(.system(.body, design: .rounded).weight(.light))
-							.foregroundColor(Color.black)
-					}
+		NavigationView {
+			List(vm.items, id: \.id) { item in
+				HStack {
+					Text(item.symbol)
+						.font(.system(.body, design: .rounded).weight(.semibold))
+						.foregroundColor(Color.black)
+					
+					Spacer()
+					
+					Text(item.price)
+						.font(.system(.body, design: .rounded).weight(.light))
+						.foregroundColor(Color.black)
 				}
 			}
-			.onAppear {
-				vm.fetchData()
-			}
+			.navigationTitle("Crypto Prices")
+			.searchable(text: $searchText)
 		}
 	}
 }

@@ -11,6 +11,10 @@ class MainViewModel: ObservableObject {
 	
 	@Published var items = Crypto()
 	
+	init() {
+		fetchData()
+	}
+	
 	func fetchData() {
 		let api = "https://api.binance.com/api/v3/ticker/price"
 		guard let url = URL(string: api) else { return }

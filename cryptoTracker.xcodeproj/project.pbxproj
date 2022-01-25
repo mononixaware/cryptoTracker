@@ -13,6 +13,7 @@
 		74BA0EFE279FFC220056BBE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BA0EFD279FFC220056BBE5 /* Preview Assets.xcassets */; };
 		74BA0F08279FFE3C0056BBE5 /* CryptocurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BA0F07279FFE3C0056BBE5 /* CryptocurrencyModel.swift */; };
 		74BA0F0A279FFEFB0056BBE5 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BA0F09279FFEFB0056BBE5 /* MainViewModel.swift */; };
+		74BA0F1027A044820056BBE5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BA0F0F27A044820056BBE5 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		74BA0EFD279FFC220056BBE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BA0F07279FFE3C0056BBE5 /* CryptocurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrencyModel.swift; sourceTree = "<group>"; };
 		74BA0F09279FFEFB0056BBE5 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		74BA0F0F27A044820056BBE5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				74BA0EF6279FFC200056BBE5 /* cryptoTrackerApp.swift */,
+				74BA0F0E27A0446A0056BBE5 /* Extensions */,
 				74BA0F06279FFE280056BBE5 /* Model */,
 				74BA0F05279FFCFE0056BBE5 /* ViewModel */,
 				74BA0F04279FFCF80056BBE5 /* View */,
@@ -95,6 +98,14 @@
 				74BA0F07279FFE3C0056BBE5 /* CryptocurrencyModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		74BA0F0E27A0446A0056BBE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74BA0F0F27A044820056BBE5 /* ColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				74BA0F08279FFE3C0056BBE5 /* CryptocurrencyModel.swift in Sources */,
 				74BA0EF7279FFC200056BBE5 /* cryptoTrackerApp.swift in Sources */,
 				74BA0F0A279FFEFB0056BBE5 /* MainViewModel.swift in Sources */,
+				74BA0F1027A044820056BBE5 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
